@@ -16,7 +16,7 @@ class Storage {
   removeItem(itemToRemove) {
     const itemExists = this.#items.includes(itemToRemove);
     if (!itemExists) {
-      console.log(`Item "${itemToRemove}" not found.`);
+      // console.log(`Item "${itemToRemove}" not found.`);
       return;
     }
     this.#items = this.#items.filter(item => item !== itemToRemove);
